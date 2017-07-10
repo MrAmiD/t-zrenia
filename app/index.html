@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>t-zrenia</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+<div class="preloader" id="preloader">
+	<div class="pulse"></div>
+</div>
+
+<div id="my-header">
+	<header>
+		<div class="container">
+			<div class="row descr">
+				<div class=" col-xs-12 col-sm-6 col-md-5 col-lg-4 item">
+					<a href="/"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 item consult-cont">
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i> г. Пермь, ул. Ленина, дом 10</p>
+					<a href="javascript:void(0)" onclick="$('#consult').click();" class="btn btn-raised btn-info">Записаться на консультацию
+						<div class="ripple-container"></div>
+					</a>
+				</div>
+				<div class="col-4 push-8  col-sm-6 push-sm-6 push-md-0 col-md-2 hidden-lg-up">
+					<div class="humb-cont">
+						<a href="#my-menu" class="hamburger hamburger--emphatic " type="button" id="menu-btn">
+				  <span class="hamburger-box">
+					 <span class="hamburger-inner"></span>
+				  </span>
+						</a>
+						<nav id="my-menu">
+							<ul>
+								<li><a href="/">Услуги центра</a></li>
+								<li class="active"><a href="">Очки</a></li>
+								<li><a href="">Контактные линзы</a></li>
+								<li><a href="">Акции</a></li>
+								<li><a href="">Полезная информация</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-8 pull-4 pull-sm-6 pull-md-0 col-sm-6 col-md-6 col-lg-4 item callAct-cont">
+					<a href="tel:+73422109200" class="link-dark"><i class="fa fa-phone" aria-hidden="true"></i>+7 (342) <b>210-92-00</b></a>
+					<br>
+					<a href="javascript:void(0)" onclick="$('#CallAct').click();" class="btn btn-raised btn-danger">Заказать звонок
+						<div class="ripple-container"></div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="container-fluid menu-cont">
+			<div class="container hidden-md-down">
+				<div class="row">
+					<div class="col-xs-12">
+						<!--Navbar-->
+						<nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
+							<div class="container">
+								<div class="collapse navbar-collapse" id="navbarNav1">
+									<ul class="navbar-nav mr-auto">
+										<li class="nav-item active">
+											<a class="nav-link">Услуги центра <span class="sr-only">(current)</span></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Очки</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Контактные линзы</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Акции</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Полезная информация</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link">Контакты</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
+<div id="my-content">
+	<section class="slider hidden-sm-down">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 owl-carousel" id="main-slider">
+					<div class="item col-md-12"   style="background: url('img/slider1.jpg'); background-repeat: no-repeat; background-size: cover;">
+						<div class="content-slider">
+							<h2 class="h2">Новые очки от 690 руб. за 10 минут!</h2>
+							<a href="/" class="btn btn-raised btn-info">Подробнее
+								<div class="ripple-container"></div>
+							</a>
+						</div>
+					</div>
+					<div class="item col-md-12"  style="background: url('img/slider2.jpg'); background-repeat: no-repeat; background-size: cover;">
+						<div class="content-slider">
+							<h2 class="h2">Новые очки от 690 руб. за 10 минут!</h2>
+							<a href="/" class="btn btn-raised btn-info">Подробнее
+								<div class="ripple-container"></div>
+							</a>
+						</div>
+					</div>
+					<div class="item col-md-12" style="background: url('img/slider3.jpg'); background-repeat: no-repeat; background-size: cover;">
+						<div class="content-slider">
+							<h2 class="h2">Новые очки от 690 руб. за 10 минут!</h2>
+							<a href="/" class="btn btn-raised btn-info">Подробнее
+								<div class="ripple-container"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-12 slider-controls owl-nav" id="customNav">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 push-md-4 col-md-8">
+					<div class="col-xs-12 content">
+						<h1 class="h1">Офтальмологический центр "Технологии зрения"</h1>
+						<!--Content from modx editor-->
+						<p>"Технологии зрения" - предоставление качественной офтальмологической помощи населению, использование передовых стандартов при изготовлении и подборе очков и контактных линз. Уникальность нашего центра в том, что в одном месте сосредоточено самое новейшее диагностическое, лечебное и производственное оборудование последнего поколения, позволяющее срочно изготовить Ваши очки в течении 10 минут. Осуществляем выезд в организации и офисы для диагностики зрения с возможностью примерки оправ.</p>
+					</div>
+					<div class="col-xs-12">
+						<h2 class="h2">Диагностика и лечение зрения</h2>
+					</div>
+					<div class="row cat-items-cont">
+						<div class="col-xs-12 col-sm-6 col-md-6 category-item">
+							<a href="/" class="h4">
+								<div class="preview" style="background-image: url('img/news4.jpg');">
+
+								</div>
+								Детская офтальмология</a>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 category-item">
+							<a href="/" class="h4">
+								<div class="preview" style="background-image: url('img/news2.jpg');">
+
+								</div>
+								Услуги и цены</a>
+						</div>
+					</div>
+
+					<!--Preim start-->
+					<div class="col-xs-12">
+						<h2 class="h2">Преимущества центра "Технологии зрения"</h2>
+					</div>
+					<div class="row preim">
+						<div class="col-xs-12 col-sm-6 col-md-3 item">
+							<div class="pr-icon" style="background: url('img/edit-user.svg');"></div>
+							<h4 class="h4">Цена</h4>
+							<p class="discr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis impedit iure molestias nemo quae, voluptate. Ab accusamus aperiam atque dicta, eius enim esse fuga itaque odit quaerat sapiente tenetur.</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 item">
+							<div class="pr-icon" style="background: url('img/edit-document.svg');"></div>
+							<h4 class="h4">Время</h4>
+							<p class="discr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis impedit iure molestias nemo quae, voluptate. Ab accusamus aperiam atque dicta, eius enim esse fuga itaque odit quaerat sapiente tenetur.</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 item">
+							<div class="pr-icon" style="background: url('img/users.svg');"></div>
+							<h4 class="h4">Запись</h4>
+							<p class="discr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis impedit iure molestias nemo quae, voluptate. Ab accusamus aperiam atque dicta, eius enim esse fuga itaque odit quaerat sapiente tenetur.</p>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 item">
+							<div class="pr-icon" style="background: url('img/city.svg');"></div>
+							<h4 class="h4">Скидки</h4>
+							<p class="discr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque corporis impedit iure molestias nemo quae, voluptate. Ab accusamus aperiam atque dicta, eius enim esse fuga itaque odit quaerat sapiente tenetur.</p>
+						</div>
+					</div>
+					<!--Preim end-->
+
+					<!--License Start-->
+					<div class="col-xs-12">
+						<h2 class="h2">Лицензии и сертификаты</h2>
+					</div>
+					<div class="license-cont">
+						<div class="col-xs-12 col-sm-12 owl-carousel license-gallery" id="license-gallery">
+							<div class="item">
+								<a data-fancybox="gallery" class="fancybox" rel="group" href="img/license.jpg">
+									<img src="img/license.jpg" alt="" />
+								</a>
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" class="fancybox" rel="group" href="img/license.jpg">
+									<img src="img/license.jpg" alt="" />
+								</a>
+							</div>
+							<div class="item">
+								<a data-fancybox="gallery" class="fancybox" rel="group" href="img/license.jpg">
+									<img src="img/license.jpg" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="col-12 slider-controls owl-nav" id="customNavLicense">
+						</div>
+					</div>
+
+
+
+					<!--License End-->
+					<!--Brands-->
+					<!---->
+				</div>
+				<!--Leftside column start-->
+				<div class="col-xs-12 col-sm-12 pull-md-8 col-md-4">
+					<!--Profit start-->
+					<p class="trigers">
+						Акции
+						<a href="" class="left-border">Все</a>
+					</p>
+					<div class="row newsfeed">
+						<div class="col-12">
+							<div class="item">
+								<div class="preview" style="background: url('img/slider3.jpg'); background-size: cover;"></div>
+								<h4 class="h4">Скидки летом на солнцезащитные очки</h4>
+								<p class="news-descr">
+									Уважаемые покупатели! Весь апрель в сети магазинов оптики "Технологии зрения"
+									СКИДКА 35% на ВСЕ солнцезащитные очки и ВСЕ оправы
+								</p>
+								<a href="/" class="btn btn-raised btn-info">Подробнее
+									<div class="ripple-container"></div>
+								</a>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="item">
+								<div class="preview" style="background: url('img/news2.jpg'); background-size: cover;"></div>
+								<h4 class="h4">Скидки летом на солнцезащитные очки</h4>
+								<p class="news-descr">
+									Уважаемые покупатели! Весь апрель в сети магазинов оптики "Технологии зрения"
+									СКИДКА 35% на ВСЕ солнцезащитные очки и ВСЕ оправы
+								</p>
+								<a href="/" class="btn btn-raised btn-info">Подробнее
+									<div class="ripple-container"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--Profit end-->
+					<!--News Start-->
+					<p class="trigers">
+						Новости
+						<a href="" class="left-border">Все</a>
+					</p>
+					<div class="row newsfeed">
+						<div class="col-12">
+							<div class="item">
+								<div class="preview" style="background: url('img/slider3.jpg'); background-size: cover;"></div>
+								<h4 class="h4">Скидки летом на солнцезащитные очки</h4>
+								<p class="news-descr">
+									Уважаемые покупатели! Весь апрель в сети магазинов оптики "Технологии зрения"
+									СКИДКА 35% на ВСЕ солнцезащитные очки и ВСЕ оправы
+								</p>
+								<a href="/" class="btn btn-raised btn-info">Подробнее
+									<div class="ripple-container"></div>
+								</a>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="item">
+								<div class="preview" style="background: url('img/news2.jpg'); background-size: cover;"></div>
+								<h4 class="h4">Скидки летом на солнцезащитные очки</h4>
+								<p class="news-descr">
+									Уважаемые покупатели! Весь апрель в сети магазинов оптики "Технологии зрения"
+									СКИДКА 35% на ВСЕ солнцезащитные очки и ВСЕ оправы
+								</p>
+								<a href="/" class="btn btn-raised btn-info">Подробнее
+									<div class="ripple-container"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--News End-->
+				</div>
+				<!--Leftside column End-->
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-12">
+				<h2 class="h2 brands">Бренды</h2>
+			</div>
+			<div class="carousel-brands owl-carousel col-xs-12 col-sm-12" id="brands-slider">
+
+				<div class="item">
+					<img src="img/brands/armani_logo-170x210.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="img/brands/chanel_logo-500x500-170x210.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="img/brands/armani_logo-170x210.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="img/brands/chanel_logo-500x500-170x210.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="img/brands/armani_logo-170x210.jpg" alt="">
+				</div>
+				<div class="item">
+					<img src="img/brands/chanel_logo-500x500-170x210.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-xs-12 slider-controls owl-nav" id="customNavBrand">
+			</div>
+		</div>
+	</div>
+</div>
+<div id="my-footer">
+
+
+
+	<footer>
+		<div class="container">
+			<div class="row btns-cont">
+				<div class=" col-xs-12 col-sm-6 col-md-4 item">
+					<a href="/"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 item">
+					<a href="javascript:void(0)" onclick="$('#consult').click();" class="btn btn-raised btn-info">Записаться на консультацию
+						<div class="ripple-container"></div>
+					</a>
+				</div>
+				<div class="col-xs-12 hidden-sm-down col-sm-6 col-md-4 item">
+					<a href="javascript:void(0)" onclick="$('#CallAct').click();" class="btn btn-raised btn-danger">Заказать звонок
+						<div class="ripple-container"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row" style="padding-bottom: 16px">
+					<div class="col-12 col-xs-12 col-sm-4">
+						<ul>
+							<li><a href="">Услуги центра</a></li>
+							<li><a href="">Контактные линзы</a></li>
+							<li><a href="">Акции</a></li>
+							<li><a href="">Полезная информация</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xs-12 col-sm-4">
+						<ul>
+							<li><a href="">Услуги центра</a></li>
+							<li><a href="">Контактные линзы</a></li>
+							<li><a href="">Акции</a></li>
+							<li><a href="">Полезная информация</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-xs-12 col-sm-4">
+						<a href="mailto:t-zrenie@mail.ru" class="link-white"><i class="fa fa-envelope-o" aria-hidden="true"></i>t-zrenie@mail.ru</b></a>
+						<br>
+						<a href="tel:+73422109200" class="link-white"><i class="fa fa-phone" aria-hidden="true"></i>+7 (342) <b>210-92-00</b></a>
+						<p><i class="fa fa-map-marker" aria-hidden="true"></i> г. Пермь, ул. Ленина, дом 10</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-xs-12 col-sm-6">
+						<h4 class="h4">Технологии зрения © 2000 - 2017</h4>
+					</div>
+					<div class="col-12 col-xs-12 col-sm-6 praWebLogo" >
+						<a href="https://praweb.ru/" target="_blank">
+							<img src="img/copyright.png" alt="ПРАВЭБ - СОЮЗ">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+
+
+<!--$('#popup').click();-->
+
+<div data-fancybox="" data-src="#consult">
+	<div id="consult" class="popup" style="display: none">
+		<h4 class="h4">Запись на консультацию</h4>
+		<form action="">
+			<input type="text" name="name" placeholder="Имя">
+			<input type="text" name="lastname" placeholder="Фамилия">
+			<input type="text" name="phoneCon" placeholder="Телефон">
+		</form>
+		<p>*При отправке заявки вы даете право на обработку ваших персональных данных</p>
+		<div>
+			<!--data-fancybox-close=""-->
+			<button class="btn btn-raised btn-info" onclick="CunsultFormValid();" id="#submit_consult">Записаться
+				<div class="ripple-container"></div>
+			</button>
+			<p id="OkMsgCon" style="color: green; display: none;">Спасибо за заявку, с Вами свяжется наш менеджер</p>
+			<p id="ErrMsgCon" style="color: red; display: none;">Введите корректные данные</p>
+		</div>
+	</div>
+</div>
+<div data-fancybox="" data-src="#CallAct">
+	<div id="CallAct" class="popup" style="display: none">
+		<h4 class="h4">Заказать звонок</h4>
+		<form action="">
+			<input type="text" name="phoneAct" placeholder="Телефон">
+		</form>
+		<p>*При отправке заявки вы даете право на обработку ваших персональных данных</p>
+		<div>
+			<!--data-fancybox-close=""-->
+			<button class="btn btn-raised btn-info" onclick="ActFormValid();" id="#submit_call">Отправить
+				<div class="ripple-container"></div>
+			</button>
+			<p id="OkMsgCall" style="color: green; display: none;">Спасибо за заявку, с Вами свяжется наш менеджер</p>
+			<p id="ErrMsgCall" style="color: red; display: none;">Введите корректные данные</p>
+
+		</div>
+	</div>
+</div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

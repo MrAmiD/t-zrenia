@@ -1,0 +1,76 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .content-slider
+    width: 60%
+  header
+    height: 212px
+    border-bottom: solid 15px $default-color
+    .descr
+      .item
+        text-align: left
+  .humb-cont
+    margin-top: 17px
+  .callAct-cont
+    margin-top: 10px
+    margin-bottom: 10px
+  .news
+    .preim
+      .item
+        .pr-icon
+          height: 91px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  #preloader
+    display: none
+  .humb-cont
+    text-align: right
+    margin-top: 25px
+  .news
+    .preim
+      .item
+        .pr-icon
+          height: 91px
+          background-size: 88px!important
+  .license-gallery
+    margin-bottom: 35px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  #preloader
+    display: none
+  header
+    height: 298px
+  .consult-cont
+    margin-top:  15px
+    margin-bottom:  10px
+  .h1, h1
+    word-wrap: break-word
+  .news
+    .cat-items-cont
+      .category-item:nth-child(1)
+        padding-right: 15px
+      .category-item:nth-child(2)
+        padding-left: 15px
+    .newsfeed
+      .item
+        padding-left: 0px
+    .trigers
+      margin-left: 0
+  footer
+    .container-fluid
+      text-align: center!important
+    .praWebLogo
+      text-align: center
+      margin-top: 10px
+      margin-bottom: 10px
+    .btns-cont
+      .btn-info
+        margin-top: 15px
